@@ -1,7 +1,6 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 class Main extends React.Component {
