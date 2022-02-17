@@ -107,3 +107,17 @@ Actual time needed to complete: 30 min
 
 
 Collaborators 2-15: Matthew Rangel, Tanner Percival
+
+## Lab 3
+
+Number and name of feature: #1 Display Modal
+
+Estimate of time needed to complete: 30 - 60 min
+
+Start time: 4:30 p.m. CT
+
+Finish time: 8:30 p.m. CT
+
+Actual time needed to complete: 4 hrs.
+
+Collaborators 2-16: Tanner Percival, Andres Mills Gallego

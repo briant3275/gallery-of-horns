@@ -2,9 +2,10 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 
 
-class HornedBeast extends React.Component {
 
-    constructor(props){
+class HornedBeast extends React.Component {
+    
+    constructor(props) {
         super(props);
         this.state = {
             votes: 0
@@ -17,18 +18,24 @@ class HornedBeast extends React.Component {
         });
     }
 
-    render(){
-        return(
-            <Card style={{ width: '18rem'}}>
-            <h3 >{this.props.title}</h3>
-            <p>🤘: {this.state.votes}</p>
-            <img
-            onClick={this.handleVote}
-            src={this.props.img}
-            alt={this.props.title}
-            title={this.props.title}
-            />
-            <p>{this.props.description}</p>
+    handleBeastClick = () => {
+        this.props.handleShowModal(this.props.beast);
+        this.handleVote();
+    }
+
+    render() {
+        return (
+            <Card >
+                <Card.Title>{this.props.beast.title}</Card.Title>
+                <Card.Text>🤘: {this.state.votes}</Card.Text>
+                <Card.Img
+                    onClick={this.handleBeastClick}
+                    src={this.props.beast.image_url}
+                    alt={this.props.beast.title}
+                    title={this.props.beast.title}
+                >
+                </Card.Img>
+                <Card.Text>{this.props.beast.description}</Card.Text>
             </Card>
         );
     }
