@@ -87,7 +87,8 @@ class App extends React.Component {
         <Main
           data={this.state.data}
           handleShowModal={this.handleShowModal}
-          selectedBeast={this.state.selectedBeast} />
+          selectedBeast={this.state.selectedBeast}
+          handleSelectHorns={this.handleSelectHorns} />
         <Footer />
       </>
     );
